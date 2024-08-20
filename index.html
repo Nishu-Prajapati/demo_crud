@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Employee data management</h1><br><br>
+<div class="container">
+    <div class="textBoxes">
+        <form id="dataForm" onsubmit="event.preventDefault();">
+            <div class="mb-3">
+                <label class="form-label">Employee Name </label><br>
+                <input type="text" class="form-control" id="nameEmp">
+            </div>
+            <br>
+            
+            <div class="mb-3">
+                <label class="form-label">ID </label><br>
+                <input type="text" class="form-control" id="idEmp">
+            </div>
+            <br><br>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+    <div class="empDataTable"> Table
+        <table id="recordsTable">
+            <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Emp ID</th>
+                <th>Options</th>
+                
+            </tr>
+            </thead>
+            
+            <tbody>
+            
+            </tbody>
+        </table>
+        
+    </div>
+
+</div>
+</body>
+<script src="home.js"></script>
+</html>
